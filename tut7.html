@@ -1,0 +1,54 @@
+<!--
+    Form and input element in HTML : By combining these elements within <form> tag, we can create interactive and user friendly interface .
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment_fORM</title>
+</head>
+<body>
+    <form action=""></form>
+    <h1>Payment Form</h1>
+    <p>Required fields are follwed by *</p>
+    <h2>Contact Information</h2>
+     <!--
+        text field <input type ="text"> : are used to input single line data 
+    -->
+    <p>Name :* <input type="text" name="name" required></p>
+    <fieldset>
+        <legend>gender</legend>
+     <!--
+        radio button : are used when user need to selelct only one option from a list
+    -->
+    <p>
+        Male <input type="radio" name="gender" id="Male">
+        Female <input type="radio" name="gender" id="Female">
+    </p>
+    </fieldset>
+    <p>Address : <textarea name="Address" id="address" cols="100" rows="7"></textarea></p>
+    <p>Email : <input type="email" name="email" id="email"></p>
+    <p>Pincode: <input type="number" name="Pincode" id="Pincode"></p>
+    <hr>
+    <h2>Payment Information</h2>
+    <p>Card Type: 
+    <!--
+       select menu : provides a dropdown list of options for users to select from.
+    -->
+        <select name="Card_Type" id="Card_Type">
+            <option value="" >--select a card type --</option>
+            <option value="Visa">Visa</option>
+            <option value="Visa">Gpay</option>
+            <option value="Visa">PhonePay</option>
+        </select>
+    </p>
+    <p>Card No. : <input type="Card no "name="card no " id="card no"></p>
+    <p>Expiration Date : <input type="date" id ="exp_date"></p>
+    <p>CVV : <input type="password" name="CVV" id="CVV"></p>
+    <!--
+        form submission : submit button are used to submit form data to a server. 
+    -->
+    <input type="submit" value = "Pay now ">
+</body>
+</html>
