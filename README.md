@@ -1,4 +1,4 @@
-#**Web-development-course :**
+#Web-development-course :  
 Web development refers to the process of building and maintaining websites or web applications.   
 
 **HTML (Hypertext Markup Language):**
