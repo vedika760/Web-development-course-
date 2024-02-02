@@ -1,0 +1,38 @@
+<!--
+    Margin : margin affects the space outside the border, so setting a background color won't have any visible effect beacuase 
+    it does'nt occupy any space withiin the element's boundries.
+    
+    padding : padding affects the area between the content and the border, so if you set a backgroung color, it will fill area
+    inside the border up to th content edge.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin VS padding</title>
+    <style>
+        .box1,.box2{
+            height: 200px;
+            width: 100px;
+        }
+        .box1{
+            margin: 50px;
+            background-color: rgb(227, 227, 13);
+        }
+        .box2{
+            padding: 50px;
+            background-color: blueviolet;
+        }
+        .wrapper{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
