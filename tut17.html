@@ -1,0 +1,44 @@
+<!--
+    In CSS, specificity determines which styles are applied to an element when multiple conflicting styles are defined. 
+It's based on selectors' weight. The more specific a selector is, the higher its weight. 
+For example, an ID selector has a higher specificity than a class selector, which has a higher specificity than an element selector.
+Specificity helps browsers decide which styles to prioritize when rendering HTML elements.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="specificity.css">
+    <style>
+/*
+        why is that our first attempt at changing the color and font failed?
+        beacause simply using class name by itslef had a lower specificity value and was trumped by other selector which targeted the unordered 
+        list with the ID value. The important words in that sentences were class and ID . CSS implies vastly different specificity weights to
+        classes and IDs.
+
+*/
+        .fav{
+            color: red;
+            font: bold ;
+        }
+
+        ul#List li{
+            font-size: 20px;
+            color: purple;
+            font-weight: normal;
+        }
+    </style>
+    <title>Specificity</title>
+</head>
+<body>
+    <ul id="List">
+        <li>Milk</li>
+        <li>butter</li>
+        <li class="Fav" style="color: aqua;">bread</li>
+        <li>soya co</li>
+        <li>paneer</li>
+        <li>kimchi</li>
+    </ul>
+</body>
+</html>
